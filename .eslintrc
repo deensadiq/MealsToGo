@@ -1,0 +1,20 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint", "prettier"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "@react-native-community",
+    "prettier"
+  ],
+  "noInlineConfig": true,
+  "rules": {
+    "semi": "off",
+    "@typescript-eslint/no-explicit-any": ["off"],
+    "@typescript-eslint/semi": ["off"],
+    "quotes": [2, "double", { "avoidEscape": true }],
+    "comma-dangle": "off",
+    "no-extra-semi": "off",
+    "prettier/prettier": ["warn", { "endOfLine": "off" }]
+  }
+}
